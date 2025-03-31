@@ -28,6 +28,11 @@
                 <li><a href="about.html">About</a></li>
             </ul>
         </nav>
+        <div class="switch">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
 
     <main class="about-page">
@@ -43,7 +48,7 @@
             <p>2002/05/15(22歳)</p>
             <p>宮崎県宮崎市出身</p>
             <p>宮崎県立佐土原高等学校情報技術科　卒</p>
-            <p>求職者支援訓練　宮崎キャリア・デザインスクール<br>
+            <p>求職者支援訓練　宮崎キャリア・デザインスクール<br class="pc-only">
                 Webデザイナー養成科　修了予定</p>
             <p class="comment">見やすいデザインにすることを心掛けています。<br>
                 お客様の声を正確に聞き、しっかりとデザインに<br>
@@ -59,7 +64,7 @@
         <section class="skill">
             <h3>Skill</h3>
             <div class="skill-outer">
-                <p>Webサイト制作における一連の作業を行うことができます。</p>
+                <p>Webサイト制作における一連の作業<span class="pc-only">を行うことができます。</span></p>
                 <ul class="skill-inner">
                     <li>Photoshop</li>
                     <li>Figma</li>
@@ -67,16 +72,17 @@
                 </ul>
             </div>
             <div class="skill-outer">
-                <p>ネットワークエンジニアの経験があります。</p>
+                <p>ネットワークエンジニアの経験<span class="pc-only">があります。</span></p>
                 <ul class="skill-inner">
-                    <li>Firewall(SRX)</li>
-                    <li>LB(BIG-IP)</li>
-                    <li>WAF(SecureSphere)</li>
+                    <li>Firewall<span class="pc-only">(SRX)</span></li>
+                    <li>LB<span class="pc-only">(BIG-IP)</span></li>
+                    <li>WAF<span class="pc-only">(SecureSphere)</span></li>
                 </ul>
-                <p class="skill-ex">※設定変更/リプレース対応/構築(LBを除く)/バージョンアップ(LBを除く)</p>
+                <p class="skill-ex">※設定変更/リプレース対応/構築<span class="pc-only">(LBを除く)</span>/バージョンアップ<span
+                        class="pc-only">(LBを除く)</span></p>
             </div>
             <div class="skill-outer">
-                <p>高校の授業にて、プログラミングを学習しました。</p>
+                <p>高校の授業にて、プログラミングを学習<span class="pc-only">しました。</span></p>
                 <ul class="skill-inner">
                     <li>C言語</li>
                     <li>Java</li>
@@ -91,7 +97,7 @@
                 <li>乙種第4類危険物取扱者　取得</li>
                 <li>初級CAD検定　合格</li>
                 <li>パソコン利用検定2級　合格</li>
-                <li>Photoshopクリエイター能力認定試験エキスパート　合格</li>
+                <li>Photoshopクリエイター能力認定試験<br class="sp-only">エキスパート　合格</li>
             </ul>
         </section>
     </main>
@@ -99,6 +105,11 @@
     <footer>
         <a href="#">Top</a>
     </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="main.js"></script>
 
 </body>
 
