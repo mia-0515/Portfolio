@@ -35,8 +35,7 @@ h1 {
 }
 
 h2 {
-    width: 70%;
-    min-width: 660px;
+    width: 600px;
     margin-left: auto;
     margin-right: auto;
     font-family: "Audiowide", sans-serif;
@@ -63,9 +62,9 @@ a {
     display: none;
 }
 
-@media screen and (max-width:850px) and (min-width:441px) {
+@media screen and (max-width:640px) and (min-width:441px) {
     section {
-        min-width: 300px;
+        width: 100%;
     }
 }
 
@@ -105,29 +104,27 @@ a {
 .more-button {
     position: absolute;
     bottom: 0;
-    right: 15%;
+    right: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 180px;
     height: 60px;
     border-radius: 10px;
-    border: 1px #555 solid;
+    border: 1px #373737 solid;
 
     font-size: 1.6rem;
-    background-color: #6C98D1;
-    color: #fff;
+    color: #474747;
 
     transition: all .2s;
 }
 
 .more-button:hover {
-    background-color: #fff;
-    color: #474747;
-    border: 1px #373737 solid;
+    background-color: #6C98D1;
+    color: #fff;
 }
 
-@media screen and (max-width:850px) and (min-width:441px) {
+@media screen and (max-width:660px) and (min-width:441px) {
     .more-button {
         right: 7.5%;
         width: 30%;
@@ -289,36 +286,188 @@ header nav ul li a {
 
 }
 
-/* message */
-.message {
+/* main top-work */
+.top-work {
+    padding-bottom: 240px;
+    /* display: flex; */
+}
+
+.top-work-outer {
     padding-top: 120px;
 }
 
-.message h3 {
-    text-align: start;
-    margin-left: 5%;
+.top-work-outer img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
 }
 
-.message p {
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 25px;
-    display: block;
+.top-work-inner {
+    position: relative;
     width: 100%;
-    padding-left: 10%;
+    height: auto;
+}
+
+.top-work-inner p {
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 1.6rem;
+    color: #373737;
+}
+
+.top-work-inner p::before {
+    content: "■";
+}
+
+@media screen and (max-width:660px) {
+    .top-work-inner p {
+        margin-left: 7.5%;
+        font-size: 1.4rem;
+    }
 }
 
 @media screen and (max-width:440px) {
-    .message {
+    .top-work-outer:first-of-type {
         padding-top: 60px;
     }
+}
 
-    .message p {
-        width: auto;
-        margin-left: 10px;
-        margin-right: 10px;
+/* main top-about */
+.top-about {
+    padding-bottom: 240px;
+    padding-top: 80px;
+}
 
+.top-about-outer {
+    position: relative;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.top-about-outer img {
+    width: 200px;
+    height: 245px;
+    object-fit: cover;
+    margin-left: 30px;
+}
+
+.top-about-inner {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.top-about-inner p {
+    font-size: 1.6rem;
+    color: #373737;
+    margin-top: 5px;
+}
+
+.top-about-inner p:nth-last-of-type(2) {
+    margin-top: 0px;
+}
+
+.top-about-inner p:nth-of-type(3) {
+    font-size: 1.4rem;
+}
+
+.name {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.name p {
+    font-size: 1.6rem;
+}
+
+.name p:first-of-type {
+    font-size: 2.0rem;
+}
+
+@media screen and (max-width:660px) {
+
+    .top-about .more-button {
+        bottom: -60px;
     }
+
+}
+
+@media screen and (max-width:440px) {
+    .top-about-outer img {
+        width: 30%;
+        height: auto;
+        margin-left: 15px;
+    }
+
+    .top-about-inner {
+        margin-top: 0;
+        margin-left: 15px;
+    }
+
+    .top-about-inner p {
+        font-size: 1.4rem;
+        color: #373737;
+        margin-top: 5px;
+    }
+
+    .top-about-inner p:nth-of-type(3) {
+        font-size: 1.2rem;
+    }
+
+    .name p {
+        font-size: 1.4rem;
+    }
+
+    .name p:first-of-type {
+        font-size: 1.8rem;
+    }
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height: 150px;
+    background-color: #277277;
+}
+
+footer a {
+    font-family: "Audiowide", sans-serif;
+    font-size: 2.6rem;
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding-top: 40px;
+}
+
+
+/* aboutpage */
+.about-page p,
+.about-page li {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.about-page h3 {
+    text-align: start;
+    margin-left: 20px;
+}
+
+@media screen and (max-width:440px) {
+
+    .about-page p,
+    .about-page li {
+        font-size: 1.4rem;
+    }
+
+    .about-page h3 {
+        text-align: start;
+        margin-left: 10px;
+    }
+
 }
 
 /* profile */
@@ -326,24 +475,27 @@ header nav ul li a {
     padding-top: 80px;
 }
 
-.profile h3 {
-    text-align: start;
-    margin-left: 5%;
-}
-
 .profile p {
-    font-size: 1.6rem;
     font-weight: 400;
-    padding-left: 10%;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-top: 10px;
 }
 
-.name {
-    display: flex;
+.profile p:nth-last-of-type(4) {
+    margin-top: 0;
 }
 
-.name p:last-of-type {
-    padding-left: 0;
+p.comment {
+    display: block;
+    width: 93.75%;
+    height: auto;
+    text-align: center;
+    background-color: #C2D3F8;
+    line-height: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
 }
 
 @media screen and (max-width:440px) {
@@ -375,6 +527,39 @@ header nav ul li a {
         margin-top: 20px;
         margin-left: 1%;
     }
+
+    .profile .name p {
+        margin-top: 0;
+    }
+}
+
+/* message */
+.message {
+    padding-top: 120px;
+}
+
+.message p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 93.75%;
+    height: auto;
+    line-height: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+@media screen and (max-width:440px) {
+    .message {
+        padding-top: 60px;
+    }
+
+    .message p {
+        width: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
 }
 
 /* skill */
@@ -383,20 +568,13 @@ header nav ul li a {
     padding-bottom: 30px;
 }
 
-.skill h3 {
-    text-align: start;
-    margin-left: 5%;
-}
-
 .skill-outer {
     position: relative;
-    padding-left: 10%;
+    margin-left: 20px;
     margin-bottom: 30px;
 }
 
 .skill-outer p {
-    font-size: 1.6rem;
-    font-weight: 400;
     padding-bottom: 5px;
 }
 
@@ -412,8 +590,6 @@ p.skill-ex {
 }
 
 .skill-inner li {
-    font-size: 1.6rem;
-    font-weight: 400;
     margin-right: 40px;
     padding-bottom: 5px;
 }
@@ -421,10 +597,10 @@ p.skill-ex {
 .skill-outer::before {
     position: absolute;
     bottom: 0;
-    left: 10%;
+    left: 0;
     content: "";
     display: block;
-    width: 80%;
+    width: 93.75%;
     height: 1px;
     background-color: #ADADAD;
 }
@@ -458,19 +634,12 @@ p.skill-ex {
     padding-bottom: 120px;
 }
 
-.certification h3 {
-    text-align: start;
-    margin-left: 5%;
-}
-
 .certification ul {
-    padding-left: 10%;
+    margin-left: 20px;
     list-style: none;
 }
 
 .certification ul li {
-    font-size: 1.6rem;
-    font-weight: 400;
     margin-bottom: 10px;
 }
 
@@ -491,68 +660,6 @@ p.skill-ex {
     .certification ul li {
         margin-bottom: 10px;
     }
-}
-
-/* main top-work */
-.top-work {
-    padding-bottom: 240px;
-}
-
-.top-work-outer {
-    padding-top: 120px;
-}
-
-.top-work-outer img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    margin-bottom: 10px;
-}
-
-.top-work-inner {
-    position: relative;
-    width: 100%;
-    height: auto;
-}
-
-.top-work-inner p {
-    margin-top: 20px;
-    margin-left: 15%;
-    font-size: 1.6rem;
-    color: #373737;
-}
-
-.top-work-inner p::before {
-    content: "■";
-}
-
-@media screen and (max-width:660px) {
-    .top-work-inner p {
-        margin-left: 7.5%;
-        font-size: 1.4rem;
-    }
-}
-
-@media screen and (max-width:440px) {
-    .top-work-outer:first-of-type {
-        padding-top: 60px;
-    }
-}
-
-/* footer */
-footer {
-    width: 100%;
-    height: 150px;
-    background-color: #277277;
-}
-
-footer a {
-    font-family: "Audiowide", sans-serif;
-    font-size: 2.6rem;
-    color: #fff;
-    display: block;
-    text-align: center;
-    padding-top: 40px;
 }
 
 /* work1-page */
@@ -591,8 +698,12 @@ footer a {
         color: #373737;
     }
 
+    .work-page-info {
+        margin-bottom: 80px;
+    }
+
     .top-work-inner {
-        margin-top: 20px;
+        margin-top: 5%;
         margin-left: 50px;
         font-size: 1.6rem;
         color: #373737;
