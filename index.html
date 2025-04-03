@@ -13,6 +13,7 @@
         href="https://fonts.googleapis.com/css2?family=Audiowide&family=Kiwi+Maru&family=Zen+Maru+Gothic:wght@400;500&display=swap"
         rel="stylesheet">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -38,12 +39,23 @@
 
     <main>
         <div class="mainvisual">
-            <h2>About</h2>
-            <p>当ポートフォリオサイトにご訪問頂きありがとうございます。<br>
-                現在はWebデザインについて日々勉強をしています。<br>
-                HTML/CSSを用いたコーディングが好きで、最近はレスポンシブデザインに力をいれています。<br>
-                向上心が高く、出来ない事を率先して調べ学習し出来る事に変える力があります。<br>
-                １つ１つを丁寧に、「だれが見ても分かりやすい」を目指して学習をしています。</p>
+            <div class="text">
+                <div data-aos="fade-right">
+                    <h2>About</h2>
+                    <p>当ポートフォリオサイトにご訪問頂きありがとうございます。<br>
+                        現在はWebデザインについて日々勉強をしています。<br>
+                        HTML/CSSを用いたコーディングが好きで、最近はレスポンシブデザインに力をいれています。<br>
+                        向上心が高く、出来ない事を率先して調べ学習し出来る事に変える力があります。<br>
+                        １つ１つを丁寧に、「だれが見ても分かりやすい」を目指して学習をしています。</p>
+                </div>
+                <div data-aos="fade-right">
+                    <h2>Profile</h2>
+                    <p>前職はITインフラ業でシステムエンジニアをしていました。<br>
+                        幼いころからパソコンが隣にある環境にいたためPCゲームが好きで、<br>友達とサバイバルゲームなどをよくしています。<br>
+                        人の役に立つことが好きで、ゲームのサーバーを建てたり、<br>
+                        PCのお悩み相談を聞いたりしています。</p>
+                </div>
+            </div>
         </div>
         <div class="menu">
             <h2>Work</h2>
@@ -70,7 +82,7 @@
                 </div>
             </div>
             <div class="top-work-outer">
-                <h3>架空フラワーショップ<br class="sp-only">ふわり</h3>
+                <h3>架空フラワーショップふわり</h3>
                 <img src="img/flowershopfuwarimain.png" alt="">
                 <div class="top-work-inner">
                     <p>Webデザイン</p>
@@ -87,7 +99,15 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 0,
+            delay: 700,
+            duration: 500,
+            easing: 'ease-out',
+        });
+    </script>
     <script src="main.js"></script>
 
 </body>
